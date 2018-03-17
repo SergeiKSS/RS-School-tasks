@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+
+	<meta charset=utf-8>
+	<title>Matching Game</title>
+	
+	<link rel="stylesheet" href="css/matchgame.css" />
+	
+</head>
+<body>
+	<header>
+		<h1>Matching Game</h1>
+	</header>
+	
+	<section id="game">
+		<div id="main-menu">
+			<div class="card selected">
+				<div class="face front1"></div>
+			</div>	    			
+			<div class="card">
+				<div class="face front2"></div>
+			</div>	    			
+			<div class="card">
+				<div class="face front3"></div>
+			</div>	    			
+    			<p>	
+    				Правила игры: необходимо найти одинаковую пару карт<br>
+    				Выберите размер игрового поля<br>
+  					<input type="radio" name="answer" value="1">4x1<Br>
+  					<input type="radio" name="answer" value="2">4x2<Br>
+  					<input type="radio" name="answer" value="3" checked="checked">4x3<Br>
+  				</p>
+ 				<input type="button" value="Play game">
+		
+		</div>
+		<div id="timer">
+			<span class="sec"></span>
+		</div>
+		<div id="cards">			
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div>	
+		</div>
+		<div id="gameOver">
+			 	<p>You win</p>
+			 	<input type="button" value="Play again">
+		</div> 
+	</section> 
+
+	<footer>
+		<p>Rolling Scopes Match-match-game. Author Sergei Karpovich</p>
+	</footer>
+
+<script src="js/matchgame.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../fonts/bebas.woff') format('woff');
+}
+@font-face {
+    font-family: 'calibri';
+    src: url('../fonts/calibri.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'St Marie Thin';
+    src: url('../fonts/st-marie.woff') format('woff');
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+main{
+  margin-top: 128px;
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrapper .logo{
+  width: 300px;
+  height: 128px;
+  float: left;
+}
+.wrapper .logo img{
+  width: 90px;
+  height: 100px;
+  float: left;
+  margin: 10px 18px;
+}
+.wrapper .logo h1{
+  font-family: bebasregular, sans-serif;
+  width: 118px;
+  font-size: 3rem;
+  margin-left: 53px;
+  float: right;
+  color: #fb9c06;
+  text-align: center;
+  padding-top: 27px;
+}
+.wrapper .logo h1 span{
+  font-size: 3.5rem;
+  color: #6e6d6b;
+}
+.wrapper nav{
+  width: 600px;
+  float: right;
+}
+.wrapper nav a{
+  display: block;
+  float: left;
+  width: 90px;
+  height: 85px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #9e9b9b;
+  padding-left: 30px;
+  font-family: calibri, sans-serif;
+  font-size: 2.2rem;
+}
+.wrapper nav a:hover{
+  color: red;
+
+}
+.wrapper nav a:before{
+  display: block;
+  content: "";
+  width: 120px;
+  height: 45px;
+  margin: 10px 0;
+  background-image: url(../images/navigation.png);
+  
+}
+.wrapper nav a.navAbout:before{
+  background-position: -120px;
+}
+.wrapper nav a.navWork:before{
+  background-position: -240px;
+}
+.wrapper nav a.navBlog:before{
+  background-position: -370px;
+}
+.wrapper nav a.navContact:before{
+  background-position: -500px;
+}
+.slider{
+  height: 400px;
+  background-image: url(../images/slider.jpg);
+  border-top: 3px solid #fcba50;
+  border-bottom: 3px solid #fcba50;
+}
+.slider p{
+  font-family: bebasregular, sans-serif;
+  font-size: 3.5rem;
+  width: 380px;
+  text-align: center;
+}
+.slider p.titleSliderUpper{
+  color: #fb9c06; 
+  background: #4c4f4f;
+  position: relative;
+  top: 130px;
+}
+.slider p.titleSliderBottom{
+  color: #6e6d6b; 
+  background: #fcc758;
+  position: relative;
+  top: 160px;
+}
+.wrapper article{
+  width: 260px;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+.wrapper article p{
+  font-family: calibri, sans-serif;
+  font-size: 1.5rem;
+}
+.wrapper article a{
+  font-family: calibri, sans-serif;
+  font-size: 1.7rem;
+  font-style: italic;
+  color: #ffac00;
+  text-decoration: none;
+  padding-left: 150px;
+}
+.wrapper article a:hover{
+  color: red;
+  text-decoration: underline;
+}
+section{
+  clear: both;
+}
+.team img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.team article{
+  width: 300px;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+.team .team-hoof{
+  margin-right: 90px;
+}
+.team .team-squawk{
+  margin-left: 90px;
+}
+.team .wrapper{
+  clear: both;
+}
+.team h2{
+  font-family: 'St Marie Thin', arial;
+  font-size: 4rem;
+  text-align: center;
+  text-decoration: underline;
+  color: #ff9c00;
+}
+.team h3{
+  font-family: calibri, sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #929290;
+  padding: 15px 0;
+}
+.team h3 span{
+  font-family: calibri, sans-serif;
+  font-size: 2.2rem;
+  color: #ff9c00;
+}
+.team p{
+  font-family: calibri, sans-serif;
+  font-size: 1.5rem;
+  color: #929290;
+  padding: 15px 10px;
+}
+.message h2{
+  font-family: 'St Marie Thin', arial;
+  font-size: 4rem;
+  text-align: center;
+  text-decoration: underline;
+  color: #ff9c00;
+  margin-bottom: 20px;
+}
+.message label{
+  font-family: 'St Marie Thin', arial;
+  font-size: 2.4rem;
+  color: #ff9c00;
+  margin-bottom: 20px;
+}
+.message p{
+  margin: 20px 0 20px 0;
+}
+
+.message input[type="text"]{
+  width: 1068px;
+  height: 32px;
+  border-top-color: #d2d0cf;
+  margin-left: 50px;
+  background-color: #f8f7f6;
+}
+.message input[type="email"]{
+  width: 1068px;
+  height: 32px;
+  border-top-color: #d2d0cf;
+  margin-left: 54px;
+  background-color: #f8f7f6;
+}
+.message textarea{
+  width: 1068px;
+  height: 90px;
+  border-color: #d2d0cf;
+  margin-left: 25px;
+  background-color: #f8f7f6;
+}
+.message input[type="submit"]{
+  font-family: 'St Marie Thin', arial;
+  font-size: 3rem;
+  color: white;
+  width: 177px;
+  height: 45px;
+  background-color: #fb9c06;
+  margin-left: 1000px;
+}
+section.message {
+  padding-bottom: 70px;
+}
+footer{
+  background-color: #fb9c06;
+  height: 70px;
+
+}
+footer p{
+  font-family: 'St Marie Thin', arial;
+  font-size: 3.3rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 12px;
+}

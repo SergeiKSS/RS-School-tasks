@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	background: BROWN url(../images/bg.jpg);
+}
+h1{
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	padding-bottom: 10px;
+	color: white;
+}
+#game {
+	border-radius: 10px;
+	border: 1px solid GRAY;
+	background: DARKGREEN url(../images/table.jpg);
+	width: 500px;
+	height: 460px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#main-menu {
+	width: 280px;
+	height: 380px;
+	position: relative;
+}
+#main-menu .selected{
+	border: 4px solid red;
+	border-radius: 10px;
+}
+#main-menu p{
+	margin-top: 140px;
+	font-size: 1.2rem;
+	color: white;
+}
+#timer{
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2rem;
+	position: absolute;
+	top: 55px;
+	color: white;
+}
+
+#main-menu  input[type="button"] {
+  position: relative;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #cc5500;
+  user-select: none;
+  padding: .8em 2em;
+  outline: none;
+  border-radius: 1px;
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+  background-size: 100% 100%, auto;
+  background-position: 50% 50%;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+  transition: 0.2s;
+}
+#main-menu  input[type="button"]:hover {
+  background-size: 140% 100%, auto;
+}
+
+#cards {
+	position: relative;
+	width: 380px;
+	height: 400px;
+}
+.card {
+	perspective: 600px;
+	width: 80px;
+	height: 120px;
+	position: absolute;
+	transition: all .3s;
+}
+.face {
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition-property: opacity, transform, box-shadow;
+	transition-duration: .3s;
+
+	backface-visibility: hidden;
+}
+.front {
+	background: GRAY  url(../images/deck.png) 0px -480px;
+}
+
+.front1 {
+	background: GRAY  url(../images/deck.png) 0px -480px;
+}
+.front2 {
+	background: GRAY  url(../images/deck.png) -80px -480px;
+}
+.front3 {
+	background: GRAY  url(../images/deck.png) -160px -480px;
+}
+.back {
+	background: LIGHTGRAY url(../images/deck.png);
+	transform: rotate3d(0,1,0,-180deg);
+}
+.card:hover .face, .card-flipped .face {
+	box-shadow: 0 0 20px #aaa;
+}
+.card-flipped .front {
+	transform: rotate3d(0,1,0,180deg);
+}
+.card-flipped .front1 {
+	transform: rotate3d(0,1,0,180deg);
+}
+.card-flipped .front2 {
+	transform: rotate3d(0,1,0,180deg);
+}
+.card-flipped .front3 {
+	transform: rotate3d(0,1,0,180deg);
+}
+.card-flipped .back {
+	transform: rotate3d(0,1,0,0deg);
+}
+.card-removed {
+	opacity: 0;
+}
+.cardAJ {background-position: -800px 0;}
+.cardAQ {background-position: -880px 0;}
+.cardAK {background-position: -960px 0;}
+.cardBJ {background-position: -800px -120px;}
+.cardBQ {background-position: -880px -120px;}
+.cardCJ {background-position: -960px -240px;}
+.cardCQ {background-position: -880px -240px;}
+.cardCK {background-position: -960px -240px;}
+.cardDJ {background-position: -960px -360px;}
+.cardDQ {background-position: -880px -360px;}
+.cardDK {background-position: -960px -360px;}
+
+#gameOver {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color: white;	
+}
+
+footer{
+	font-size: 0.9rem;
+	color: white;	
+	text-transform: uppercase;
+}
+#gameOver  input[type="button"] {
+  position: relative;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #cc5500;
+  user-select: none;
+  padding: .8em 2em;
+  outline: none;
+  border-radius: 1px;
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+  background-size: 100% 100%, auto;
+  background-position: 50% 50%;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+  transition: 0.2s;
+}
+#gameOver input[type="button"]:hover {
+  background-size: 140% 100%, auto;
+}
